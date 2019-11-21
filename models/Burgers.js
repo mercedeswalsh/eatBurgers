@@ -1,11 +1,11 @@
 module.exports = (Model, DataTypes, sequelize) => {
 
-    class Burgers extends Model {}
+    class Burger extends Model {}
   
-    Burgers.init({
+    Burger.init({
       burger: DataTypes.STRING,
       devoured: { type: DataTypes.BOOLEAN, defaultValue: '0' }
     }, { sequelize, modelName: 'burger'})
   
-    return Burgers
+    return Burger
   }
